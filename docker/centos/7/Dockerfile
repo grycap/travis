@@ -25,4 +25,3 @@ RUN yum -y install epel-release initscripts\
 RUN printf '%s\n' '[local]' 'localhost ansible_connection=local' > /etc/ansible/hosts
 
 VOLUME ["/sys/fs/cgroup"]
-CMD ["/usr/sbin/init"]
