@@ -6,6 +6,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
      software-properties-common \
      sudo \
+     iproute2 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /usr/share/doc \
