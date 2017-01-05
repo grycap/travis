@@ -9,6 +9,7 @@ RUN yum -y install epel-release \
       which \
       ansible \
       python-pip \
+      iproute \
  && yum clean all
 
 # Install Ansible inventory file
