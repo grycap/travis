@@ -4,7 +4,7 @@ MAINTAINER alpegon3@upv.es
 # Update and install all the necessary packages
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-     software-properties-common \
+     software-properties-common systemd \
      sudo \
      iproute2 \
   && apt-get clean \
