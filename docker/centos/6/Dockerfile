@@ -10,9 +10,11 @@ RUN yum -y install epel-release \
       ansible \
       python-pip \
       iproute \
+      python2-ndg_httpsclient.noarch \
+      python-pyasn1 \
+      pyOpenSSL \
+      python-urllib3 \
  && yum clean all
-
-RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1
 
 # Install Ansible inventory file
 RUN printf '%s\n' '[local]' 'localhost ansible_connection=local' > /etc/ansible/hosts
