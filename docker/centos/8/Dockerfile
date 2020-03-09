@@ -8,7 +8,7 @@ RUN yum -y install epel-release \
       sudo \
       which \
       ansible \
-      python3-pip \
+      python2-pip \
       iproute \
  && yum clean all
 
