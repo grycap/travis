@@ -12,5 +12,7 @@ RUN yum -y install epel-release \
       iproute \
  && yum clean all
 
+RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1
+
 # Install Ansible inventory file
 RUN printf '%s\n' '[local]' 'localhost ansible_connection=local' > /etc/ansible/hosts
